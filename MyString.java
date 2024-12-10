@@ -94,9 +94,10 @@ public class MyString {
      * @param str - a string
      * @return a string consisting of the characters of str, separated by spaces.
      */
-    public static String spacedString(String str) {
-       String newStr = " ";
-       int count = str.length();
+    public static String spacedString(String str) {       
+        int count = str.length();
+        String newStr = "";
+        if (count == 0) newStr = " ";
        for (int i = 0; i < count; i++){
         newStr = newStr + " ";
         newStr = newStr + str.charAt(i);
