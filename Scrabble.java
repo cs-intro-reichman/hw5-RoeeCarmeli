@@ -1,6 +1,9 @@
 /*
  * RUNI version of the Scrabble game.
  */
+
+import javax.swing.text.html.StyleSheet;
+
 public class Scrabble {
 
 	// Note 1: "Class variables", like the five class-level variables declared below,
@@ -104,6 +107,8 @@ public class Scrabble {
 			if (isWordInDictionary(input)) {
 				score = score + wordScore(input);
 				hand = MyString.remove(hand, input);
+				System.out.println(input + " earned " + wordScore(input) + " points. score: " + score + " points");
+				System.out.println();
 			}
 			else System.out.println("No such word in the dictionary. Try again.");
 		}
