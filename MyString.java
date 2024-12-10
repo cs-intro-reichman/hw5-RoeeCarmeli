@@ -27,7 +27,7 @@ public class MyString {
     public static int countChar(String str, char ch) {
         String newStr = lowerCase(str);
         int count = 0;
-        for(int i = 0; i < str.length(); i++){
+        for(int i = 0; i <= str.length(); i++){
             if (newStr.charAt(i) == ch) count++;
         }
         return count;
@@ -97,11 +97,11 @@ public class MyString {
     public static String spacedString(String str) {       
         int count = str.length();
         String newStr = "";
-       for (int i = 0; i < count - 1; i++){
+        for (int i = 0; i < count - 1; i++){
         newStr = newStr + str.charAt(i);
         newStr = newStr + " ";
        }
-       newStr = newStr + str.charAt(count - 1);
+       if (count > 0) newStr = newStr + str.charAt(count - 1);
        return newStr;
     }
   
