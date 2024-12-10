@@ -95,12 +95,11 @@ public class MyString {
      */
     public static String spacedString(String str) {
        String newStr = "";
-       int count = str.length() - 1;
+       int count = str.length();
        for (int i = 0; i < count; i++){
-        newStr = newStr + str.charAt(i);
         newStr = newStr + " ";
+        newStr = newStr + str.charAt(i);
        }
-       newStr = newStr + str.charAt(count);
        return newStr;
     }
   
