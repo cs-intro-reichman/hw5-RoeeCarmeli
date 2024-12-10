@@ -35,7 +35,7 @@ public class MyString {
 
     // Makes sure all the characters are lowercased
     public static String lowerCase(String str) {
-        String newString = "";
+        String newString = " ";
         char ch;
         for(int i = 0; i < str.length(); i++){
             ch = str.charAt(i);
