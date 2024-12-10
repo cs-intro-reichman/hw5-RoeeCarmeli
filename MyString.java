@@ -97,11 +97,11 @@ public class MyString {
     public static String spacedString(String str) {       
         int count = str.length();
         String newStr = "";
-        if (count == 0) newStr = " ";
-       for (int i = 0; i < count; i++){
-        newStr = newStr + " ";
+       for (int i = 0; i < count - 1; i++){
         newStr = newStr + str.charAt(i);
+        newStr = newStr + " ";
        }
+       newStr = newStr + str.charAt(count - 1);
        return newStr;
     }
   
